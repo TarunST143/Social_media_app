@@ -1,0 +1,108 @@
+.notificationsModalBg{
+    /* display: none; */
+    position: fixed;
+    z-index: 8;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.notificationsContainer{
+    z-index: 999;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: fixed;
+    top: 10vh;
+    right: 1vw;
+    width: 27vw;
+    height: 70vh;
+    max-height: 90vh;
+    background-color: rgba(246, 251, 254, 0.361);
+    backdrop-filter: blur(15px);
+    border: 1px solid #b4b6b8;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.closenotifications{
+    float: right;
+    position: relative;
+    top: 0vh;
+    right: 0vw;
+    color: rgb(106, 107, 107);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.notificationsTitle{
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.5rem;
+    /* padding-bottom: 0.5rem; */
+    margin: 0px;
+    color: rgb(8, 82, 147);
+}
+.notificationsHr{
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+
+.uploadImgBox input{
+    display: none;
+}
+
+.uploadImgBox label{
+    text-align: center;
+    padding-top: 8vh;
+    color: rgba(8, 82, 147, 0.63);
+    height: fit-content;
+    min-height: 20vh;
+    width: 28vw;
+    border: 1px solid #c0c1c3;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.descriptionInput input{
+    border-color: #c0c1c3;
+    width: 100%;
+}
+.descriptionInput label{
+    color: rgba(8, 82, 147, 0.63);
+}
+
+.notificationsBody form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.notificationsBody form button{
+    width: 40%;
+    border: none;
+    padding: 8px 0;
+    background-color: rgba(6, 112, 234, 0.479);
+    color: aliceblue;
+    font-weight: 500;
+    border-radius: 0.4rem;
+}
+
+.notificationsBody p{
+    text-align: center;
+    color: #9ca3af;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .notificationsContainer{
+        top: 20vh;
+        left: 5vw;
+        width: 90vw;
+    }
+    .uploadImgBox label{
+        width: 82vw;
+    }
+}

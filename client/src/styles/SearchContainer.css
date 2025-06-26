@@ -1,0 +1,26 @@
+.searchContainer{
+    width: 20vw;
+    height: fit-content;
+    background-color: rgba(158, 202, 228, 0.155);
+    position: absolute;
+    top: 10vh;
+    left: 2vw;
+    border-radius: 1rem;
+}
+
+.searchedUserInfo {
+    display: flex;
+    align-items: center;
+    margin: 20px 20px;
+    gap: 10px;
+    cursor: pointer;
+}
+.searchedUserInfo img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.searchedUserInfo span{
+    font-size: 1.2rem;
+}

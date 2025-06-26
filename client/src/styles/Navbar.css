@@ -1,0 +1,86 @@
+.Navbar{
+    display: flex;
+    gap: 0.5rem;
+    width: 25vw;
+    position: fixed;
+    right: 0;
+    height: 10vh;
+    z-index: 7;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+.btns{
+    width: 30px;
+    height: 30px;
+    color: #777e83;
+    cursor: pointer;
+}
+.Notifybtn{
+    width: 35px;
+    height: 35px;
+}
+.chatbtn{
+    width: 31px;
+    height: 31px;
+    padding-top: 5px;
+}
+.createPostbtn{
+    padding-top: 3px;
+}
+.btns :active{
+    color: #1393f5;
+}
+
+.Navbar img{
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 2px solid #68caf4;
+    cursor: pointer;
+}
+
+
+.r-button{
+    height: 3rem;
+    width: 80%;
+    align-self: center;
+    background: linear-gradient(106.23deg, #68caf4, #1393f5 100%);
+}
+@media screen and (max-width: 900px) {
+    .Navbar{
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Navbar{
+        width: 100%;
+        position: fixed;
+        bottom: 0vh;
+        height: 7vh;
+        background-color: rgba(226, 242, 248, 0.443);
+        backdrop-filter: blur(15px);
+    }
+    .btns{
+        width: 35px;
+        height: 35px;
+    }
+    .Notifybtn{
+        width: 39px;
+        height: 39px;
+    }
+    .chatbtn{
+        width: 34px;
+        height: 34px;
+    }
+    .Navbar img{
+        width: 35px;
+        height: 35px;
+    }
+    
+}
+
+

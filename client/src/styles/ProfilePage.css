@@ -1,0 +1,143 @@
+.profilePage{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.profileCard{
+    width: 25vw;
+    height: fit-content;
+    background-color: rgba(245, 255, 255, 0.591);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    position: relative;
+    top: 12vh;
+    left: 2vw;
+    border-radius: 1rem;
+    margin-right: 30px;
+    padding: 20px 0;
+
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileCard img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid rgba(56, 146, 188, 0.281);
+}
+
+.profileCard h4{
+    margin: 0;
+    font-size: 1.2rem;
+    margin: 10px 0 5px 0;
+    color: rgba(9, 57, 179, 0.763);
+}
+
+.profileCard p{
+    margin-bottom: 20px;
+    color: rgb(87, 100, 114);
+    text-align: center;
+    width: 80%;
+}
+
+
+.profileDetailCounts{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    
+}
+
+
+.profileDetailCounts p{
+    margin: 0;
+    color: rgb(4, 32, 55);
+}
+
+.profileControlBtns{
+    display: flex;
+    gap: 30px;
+}
+
+.profileControlBtns button{
+    width: 80px;
+    border: none;
+    background-color: rgb(6, 116, 206);
+    color: aliceblue;
+    padding: 3px 5px 5px 5px;
+    border-radius: 0.3rem;
+}
+
+
+.profileEditCard{
+    width: 25vw;
+    height: fit-content;
+    background-color: rgba(245, 255, 255, 0.591);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    position: relative;
+    top: 12vh;
+    left: 2vw;
+    border-radius: 1rem;
+    margin-right: 30px;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.profilePostsContainer{
+    width: 46vw;
+    height: 90vh;
+    position: relative;
+    top: 12vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.deletePost{
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.profileFollowContainer{
+    width: 23.5vw;
+    height: 90vh;
+    /* background-color: rgba(245, 255, 255, 0.591); */
+    position: relative;
+    top: 12vh;
+    
+}
+.followContainerHeader{
+    display: flex;
+    justify-content: space-evenly;
+}
+.followContainerHeader h4{
+    font-size: 1.3rem;
+    color: rgba(3, 64, 134, 0.808);
+    cursor: pointer;
+}
+

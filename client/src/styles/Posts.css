@@ -1,0 +1,217 @@
+.postsContainer{
+    width: 50vw;
+    height: 90vh;
+    position: relative;
+    left: 25vw;
+    top: 10vh;
+    z-index: 99;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0vh 0px 2vh 0px;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .postsContainer{
+        width: 100%;
+        height: 100vh;
+        left: 0vw;
+        top: 0vh;
+        padding: 7vh 10px 8vh 10px;
+    }
+}
+
+
+
+
+.Post
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 9;
+    padding-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.219);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    gap: 1rem;
+    height: fit-content;
+    border: 1px solid rgba(188, 183, 183, 0.304);
+
+}
+
+.postTop{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-right: 2%;
+    align-items: center;
+}
+.postTopDetails{
+    display: flex;
+}
+.userpic{
+    position: relative;
+    top: 0vh;
+    left: 0vw;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #68caf4;
+}
+.usernameTop{
+    position: relative;
+    top: 0.5vh;
+    left: 0.5vw;
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.2rem;
+}
+#addFriendInPost{
+    font-size: 1.5rem;
+    color: #088ec8;
+}
+
+
+
+
+.postimg{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    align-items: center;
+}
+
+
+
+
+.postReact{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-left: 2vw;
+}
+.reactbtn{
+    font-size: 20px;
+    color: rgba(6, 98, 202, 0.705);
+    cursor: pointer;
+}
+
+.supliconcol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.placeiconcol{
+    display: flex;
+    flex-direction: row; 
+    /* position: absolute;
+    right: 2vw; */
+}
+.supportCount{
+    font-size: 0.6rem;
+    font-family: 'Kanit', sans-serif;
+}
+.place{
+    padding-left: 0.6rem;
+    font-size: 0.8rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.datacol{
+    display: flex;
+    flex-direction: row;
+}
+
+.detail{
+    margin-right: 1vw;
+    gap: 0.3rem;
+}
+
+.username{
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    top: -0.5vh;
+    padding-left: 1vw;
+    font-family: 'Padauk', sans-serif;
+}
+
+.desc, .identitydata{
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+
+.labeldata{
+    font-size: 1rem;
+    position: relative;
+    left: 0.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.datatitle{
+    font-weight: bold;
+    margin-left: 1vw;
+    font-family: 'Padauk', sans-serif;
+}
+
+
+.commentsContainer{
+    width: 80%;
+    height: fit-content;
+    margin-left: 2%;
+}
+
+.commentsContainer h5{
+   font-size: 1.1rem;
+}
+.commentsBody{
+    margin-left: 5%;
+}
+
+.commentsBody .comments{
+    max-height: 80px;
+    overflow-y: scroll;
+}
+.commentsBody p{
+    font-size: 0.8rem;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.commentsContainer .makeComment{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    /* margin-top: 10px; */
+}
+.commentsContainer .makeComment input{
+    padding: 5px;
+    font-size: 0.8rem;
+    height: 30px;
+}
+.commentsContainer .makeComment button{
+    padding: 0px 10px 2px 10px;
+    height: 30px;
+    border: none;
+    font-size: 0.8rem;
+}
+
+
+
+@media screen and (max-width: 500px){
+   
+
+    .placeiconcol{
+        right: 4vw;
+    }
+
+    .genpost-linkdiv{
+        margin-left: 7vw;
+    }
+}
